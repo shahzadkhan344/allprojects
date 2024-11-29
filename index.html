@@ -5,149 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
-    <style>
-        body {
-            background-color: #B99470;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-    
-        h1 {
-            text-align: center;
-            font-size: 3rem;
-            color: #800000;
-            background-color: #DAD4B5;
-            padding: 1rem;
-            border-radius: 50px;
-            max-width: 90%;
-            margin: 1rem auto;
-        }
-    
-        .first {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            padding: 0;
-            margin: 1rem;
-        }
-    
-        .first1, .first2 {
-            flex: 1 1 300px; /* Flexibly occupy space, minimum width 300px */
-            padding: 0.5rem;
-            background-color: #F8F1E7;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-    
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-    
-        li {
-            margin: 0.5rem 0;
-        }
-    
-        .list {
-            color: #800000;
-            text-decoration: none;
-            font-weight: bold;
-            display: block;
-            padding: 0.5rem;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-    
-        .list:hover {
-            background-color: #F2E8C6;
-            cursor: pointer;
-            transform: scale(1.05);
-        }
-    
-        /* Media Query for Smaller Screens */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-    
-            .first {
-                flex-direction: column;
-            }
-        }
-    
-        /* Media Query for Extra Small Screens */
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2rem;
-            }
-    
-            .list {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
-    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>My Projects</h1>
-    <ul class="first">
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="first1">
-            <li><a class="list" href="./2119_gymso_fitness/index.html">Project for GYM</a></li>
-            <li><a class="list" href="./evolve/index.html">Project for GYM</a></li>
-            <li><a class="list" href="./fitness/index.html">Project for GYM</a></li>
-            <li><a class="list" href="./gym-website-template/index.html">Project for GYM</a></li>
-            <li><a class="list" href="./2133_moso_interior/index.html">Project for Interior designer</a>
-            </li>
-            <li><a class="list" href="./architecture-html-template/index.html">Project for architecture</a>
-            </li>
-            <li><a class="list" href="./bliss-html/index.html">Project for SPA</a></li>
-            <li><a class="list" href="./bootstrap-restaurant-template/index.html">Project for
-                    Restaurant</a></li>
-            <li><a class="list" href="./bootstrap-restaurant-template/index.html">Project for
-                    Restaurant</a></li>
-            <li><a class="list" href="./car-rental-html-template/index.html">Project for CAR RENTAL</a>
-            </li>
-            <li><a class="list" href="./car-wash-website-template/index.html">Project for CAR WASH</a></li>
-            <li><a class="list" href="./catering-services-website-template/index.html">Project for Catering
-                    Service</a></li>
-            <li><a class="list" href="./dance-class-website-template/index.html">Project for DANCE
-                    CLASS</a></li>
-            <li><a class="list" href="./dentl website 3/index.html">Project for Dental Clinic</a></li>
-            <li><a class="list" href="./drinking-water-website-template/index.html">Project for Water
-                    Supply</a></li>
-            <li><a class="list" href="./driving-school-website-template/index.html">Project for Driving
-                    School</a></li>
-            <li><a class="list" href="./hotel-html-template/index.html">Project for HOTEl</a></li>
-            <li><a class="list" href="./html/index.html">Project 2</a></li>
-            <li><a class="list" href="./king-of-pasta/index.html">Project for CAFE</a></li>
-        </div>
+    <h1 id="projects">My Projects</h1>
 
-        <div class="first2">
-            <li><a class="list" href="./laboratory-html-website-template/index.html">Project for laboratory</a></li>
-            <li><a class="list" href="./loft-city/index.html">Project for HOTEl</a></li>
-            <li><a class="list" href="./logistics-company-website-template/index.html">Project for logistics</a></li>
-            <li><a class="list" href="./luxury-car-rental/index.html">Project for CAR RENTAl</a></li>
-            <li><a class="list" href="./mind/index.html">Project for MIND Education</a></li>
-            <li><a class="list" href="./organic-food-website-template/index.html">Project Organic FOOD </a></li>
-            <li><a class="list" href="./pet-shop-website-template/index.html">Project for PET SHOP</a></li>
-            <li><a class="list" href="./real-estate-html-template/index.html">Project for Real STATE</a></li>
-            <li><a class="list" href="./savory/index.html">Project for Multipurpose</a></li>
-            <li><a class="list" href="./shipping-company-website-template/index.html">Project for logistics</a></li>
-            <li><a class="list" href="./spa-html-template/index.html">Project for Spa</a></li>
-            <li><a class="list" href="./spa-website-template/index.html">Project SPA</a></li>
-            <li><a class="list" href="./techbro\HighTechIT-1.0.0/index.html">Project for DIGITAL MARKETING</a></li>
-            <li><a class="list" href="./templatemo_515_eatery/index.html">Project for CAFE</a></li>
-            <li><a class="list" href="./templatemo_565_onix_digital/index.html">Project for SEO</a></li>
-            <li><a class="list" href="./templatemo_581_kind_heart_charity/index.html">Project 1</a></li>
-            <li><a class="list" href="./tourism-website-template/index.html">Project for Tour & travlers</a></li>
-            <li><a class="list" href="./traveler/index.html">Project for TOUR & travlers</a></li>
-            <li><a class="list" href="./zoo-website-template/index.html">Project for ZOO</a></li>
-        </div>
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for a project..." onkeyup="filterProjects(this.value)">
+    </div>
+
+    
+
+    <!-- Featured Projects -->
+    <section class="featured">
+        <h2>Featured Projects</h2>
+        <ul>
+            <li><a class="list" href="./featured1.html"><i class="fas fa-star"></i> Featured Project 1</a></li>
+            <li><a class="list" href="./featured2.html"><i class="fas fa-star"></i> Featured Project 2</a></li>
+        </ul>
+    </section>
+
+
+    <div class="first1">
+        <li><a class="list" href="./2119_gymso_fitness/index.html">Project for GYM</a></li>
+        <li><a class="list" href="./evolve/index.html">Project for GYM</a></li>
+        <li><a class="list" href="./fitness/index.html">Project for GYM</a></li>
+        <li><a class="list" href="./gym-website-template/index.html">Project for GYM</a></li>
+        <li><a class="list" href="./2133_moso_interior/index.html">Project for Interior designer</a>
+        </li>
+        <li><a class="list" href="./architecture-html-template/index.html">Project for architecture</a>
+        </li>
+        <li><a class="list" href="./bliss-html/index.html">Project for SPA</a></li>
+        <li><a class="list" href="./bootstrap-restaurant-template/index.html">Project for
+                Restaurant</a></li>
+        <li><a class="list" href="./bootstrap-restaurant-template/index.html">Project for
+                Restaurant</a></li>
+        <li><a class="list" href="./car-rental-html-template/index.html">Project for CAR RENTAL</a>
+        </li>
+        <li><a class="list" href="./car-wash-website-template/index.html">Project for CAR WASH</a></li>
+        <li><a class="list" href="./catering-services-website-template/index.html">Project for Catering
+                Service</a></li>
+        <li><a class="list" href="./dance-class-website-template/index.html">Project for DANCE
+                CLASS</a></li>
+        <li><a class="list" href="./dentl website 3/index.html">Project for Dental Clinic</a></li>
+        <li><a class="list" href="./drinking-water-website-template/index.html">Project for Water
+                Supply</a></li>
+        <li><a class="list" href="./driving-school-website-template/index.html">Project for Driving
+                School</a></li>
+        <li><a class="list" href="./hotel-html-template/index.html">Project for HOTEl</a></li>
+        <li><a class="list" href="./html/index.html">Project 2</a></li>
+        <li><a class="list" href="./king-of-pasta/index.html">Project for CAFE</a></li>
+    </div>
+
+    <div class="first2">
+        <li><a class="list" href="./laboratory-html-website-template/index.html">Project for laboratory</a></li>
+        <li><a class="list" href="./loft-city/index.html">Project for HOTEl</a></li>
+        <li><a class="list" href="./logistics-company-website-template/index.html">Project for logistics</a></li>
+        <li><a class="list" href="./luxury-car-rental/index.html">Project for CAR RENTAl</a></li>
+        <li><a class="list" href="./mind/index.html">Project for MIND Education</a></li>
+        <li><a class="list" href="./organic-food-website-template/index.html">Project Organic FOOD </a></li>
+        <li><a class="list" href="./pet-shop-website-template/index.html">Project for PET SHOP</a></li>
+        <li><a class="list" href="./real-estate-html-template/index.html">Project for Real STATE</a></li>
+        <li><a class="list" href="./savory/index.html">Project for Multipurpose</a></li>
+        <li><a class="list" href="./shipping-company-website-template/index.html">Project for logistics</a></li>
+        <li><a class="list" href="./spa-html-template/index.html">Project for Spa</a></li>
+        <li><a class="list" href="./spa-website-template/index.html">Project SPA</a></li>
+        <li><a class="list" href="./techbro\HighTechIT-1.0.0/index.html">Project for DIGITAL MARKETING</a></li>
+        <li><a class="list" href="./templatemo_515_eatery/index.html">Project for CAFE</a></li>
+        <li><a class="list" href="./templatemo_565_onix_digital/index.html">Project for SEO</a></li>
+        <li><a class="list" href="./templatemo_581_kind_heart_charity/index.html">Project 1</a></li>
+        <li><a class="list" href="./tourism-website-template/index.html">Project for Tour & travlers</a></li>
+        <li><a class="list" href="./traveler/index.html">Project for TOUR & travlers</a></li>
+        <li><a class="list" href="./zoo-website-template/index.html">Project for ZOO</a></li>
+    </div>
     </ul>
+
+
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio | <a href="mailto:your-email@example.com">Contact</a></p>
+    </footer>
+
+    <script>
+        function filterProjects(query) {
+            const items = document.querySelectorAll('.list');
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.parentElement.style.display = text.includes(query.toLowerCase()) ? '' : 'none';
+            });
+        }
+
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>

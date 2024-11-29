@@ -1,8 +1,3 @@
-/*
-* WOW wow.js - v1.3.0 - 2016-10-04
-* https://wowjs.uk
-* Copyright (c) 2016 Thomas Grainger; Licensed MIT
-*/
 
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
@@ -134,7 +129,6 @@
     return document.documentElement.clientHeight;
   }
 
-  // Minimalistic WeakMap shim, just in case.
   var WeakMap = window.WeakMap || window.MozWeakMap || function () {
     function WeakMap() {
       _classCallCheck(this, WeakMap);
@@ -192,7 +186,6 @@
     return MutationObserver;
   }(), _class.notSupported = true, _temp);
 
-  // getComputedStyle shim, from http://stackoverflow.com/a/21797294
   var getComputedStyle = window.getComputedStyle || function getComputedStyle(el) {
     var getComputedStyleRX = /(\-([a-z]){1})/g;
     return {
@@ -464,8 +457,6 @@
     }, {
       key: 'cacheAnimationName',
       value: function cacheAnimationName(box) {
-        // https://bugzilla.mozilla.org/show_bug.cgi?id=921834
-        // box.dataset is not supported for SVG elements in Firefox
         return this.animationNameCache.set(box, this.animationName(box));
       }
     }, {
@@ -503,9 +494,6 @@
     }, {
       key: 'offsetTop',
       value: function offsetTop(element) {
-        // SVG elements don't have an offsetTop in Firefox.
-        // This will use their nearest parent that has an offsetTop.
-        // Also, using ('offsetTop' of element) causes an exception in Firefox.
         while (element.offsetTop === undefined) {
           element = element.parentNode;
         }
